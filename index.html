@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +19,10 @@
         }
         input[type="time"] {
             width: 100px;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 5px;
         }
         .completed {
             background-color: #d4edda;
@@ -56,18 +59,17 @@
     </thead>
     <tbody>
         <tr>
-            <td>Task 1</td>
+            <td><input type="text" id="task1" placeholder="Enter task description"></td>
             <td><input type="time" id="start1" value="03:00"> - <input type="time" id="end1" value="05:00"></td>
             <td><button class="btn-complete" onclick="markDone(1)">Done</button></td>
             <td class="timestamp" id="timestamp1"></td>
         </tr>
         <tr>
-            <td>Task 2</td>
+            <td><input type="text" id="task2" placeholder="Enter task description"></td>
             <td><input type="time" id="start2" value="07:00"> - <input type="time" id="end2" value="08:00"></td>
             <td><button class="btn-complete" onclick="markDone(2)">Done</button></td>
             <td class="timestamp" id="timestamp2"></td>
         </tr>
-        <!-- Add more rows as needed -->
     </tbody>
 </table>
 
