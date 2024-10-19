@@ -90,18 +90,151 @@
         </tr>
     </thead>
     <tbody>
-        <!-- Adding 24 rows for tasks -->
-        ${Array.from({ length: 24 }).map((_, i) => `
+        <!-- Manually creating 24 rows for tasks -->
         <tr>
-            <td>
-                <input type="time" id="start${i + 1}" value="00:00"> - 
-                <input type="time" id="end${i + 1}" value="01:00">
-            </td>
-            <td><input type="text" id="task${i + 1}" placeholder="Enter task description"></td>
-            <td><button class="btn-complete" onclick="markDone(${i + 1})">Done</button></td>
-            <td class="timestamp" id="timestamp${i + 1}"></td>
+            <td><input type="time" id="start1" value="00:00"> - <input type="time" id="end1" value="01:00"></td>
+            <td><input type="text" id="task1" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(1)">Done</button></td>
+            <td class="timestamp" id="timestamp1"></td>
         </tr>
-        `).join('')}
+        <tr>
+            <td><input type="time" id="start2" value="01:00"> - <input type="time" id="end2" value="02:00"></td>
+            <td><input type="text" id="task2" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(2)">Done</button></td>
+            <td class="timestamp" id="timestamp2"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start3" value="02:00"> - <input type="time" id="end3" value="03:00"></td>
+            <td><input type="text" id="task3" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(3)">Done</button></td>
+            <td class="timestamp" id="timestamp3"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start4" value="03:00"> - <input type="time" id="end4" value="04:00"></td>
+            <td><input type="text" id="task4" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(4)">Done</button></td>
+            <td class="timestamp" id="timestamp4"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start5" value="04:00"> - <input type="time" id="end5" value="05:00"></td>
+            <td><input type="text" id="task5" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(5)">Done</button></td>
+            <td class="timestamp" id="timestamp5"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start6" value="05:00"> - <input type="time" id="end6" value="06:00"></td>
+            <td><input type="text" id="task6" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(6)">Done</button></td>
+            <td class="timestamp" id="timestamp6"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start7" value="06:00"> - <input type="time" id="end7" value="07:00"></td>
+            <td><input type="text" id="task7" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(7)">Done</button></td>
+            <td class="timestamp" id="timestamp7"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start8" value="07:00"> - <input type="time" id="end8" value="08:00"></td>
+            <td><input type="text" id="task8" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(8)">Done</button></td>
+            <td class="timestamp" id="timestamp8"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start9" value="08:00"> - <input type="time" id="end9" value="09:00"></td>
+            <td><input type="text" id="task9" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(9)">Done</button></td>
+            <td class="timestamp" id="timestamp9"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start10" value="09:00"> - <input type="time" id="end10" value="10:00"></td>
+            <td><input type="text" id="task10" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(10)">Done</button></td>
+            <td class="timestamp" id="timestamp10"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start11" value="10:00"> - <input type="time" id="end11" value="11:00"></td>
+            <td><input type="text" id="task11" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(11)">Done</button></td>
+            <td class="timestamp" id="timestamp11"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start12" value="11:00"> - <input type="time" id="end12" value="12:00"></td>
+            <td><input type="text" id="task12" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(12)">Done</button></td>
+            <td class="timestamp" id="timestamp12"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start13" value="12:00"> - <input type="time" id="end13" value="13:00"></td>
+            <td><input type="text" id="task13" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(13)">Done</button></td>
+            <td class="timestamp" id="timestamp13"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start14" value="13:00"> - <input type="time" id="end14" value="14:00"></td>
+            <td><input type="text" id="task14" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(14)">Done</button></td>
+            <td class="timestamp" id="timestamp14"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start15" value="14:00"> - <input type="time" id="end15" value="15:00"></td>
+            <td><input type="text" id="task15" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(15)">Done</button></td>
+            <td class="timestamp" id="timestamp15"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start16" value="15:00"> - <input type="time" id="end16" value="16:00"></td>
+            <td><input type="text" id="task16" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(16)">Done</button></td>
+            <td class="timestamp" id="timestamp16"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start17" value="16:00"> - <input type="time" id="end17" value="17:00"></td>
+            <td><input type="text" id="task17" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(17)">Done</button></td>
+            <td class="timestamp" id="timestamp17"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start18" value="17:00"> - <input type="time" id="end18" value="18:00"></td>
+            <td><input type="text" id="task18" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(18)">Done</button></td>
+            <td class="timestamp" id="timestamp18"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start19" value="18:00"> - <input type="time" id="end19" value="19:00"></td>
+            <td><input type="text" id="task19" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(19)">Done</button></td>
+            <td class="timestamp" id="timestamp19"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start20" value="19:00"> - <input type="time" id="end20" value="20:00"></td>
+            <td><input type="text" id="task20" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(20)">Done</button></td>
+            <td class="timestamp" id="timestamp20"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start21" value="20:00"> - <input type="time" id="end21" value="21:00"></td>
+            <td><input type="text" id="task21" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(21)">Done</button></td>
+            <td class="timestamp" id="timestamp21"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start22" value="21:00"> - <input type="time" id="end22" value="22:00"></td>
+            <td><input type="text" id="task22" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(22)">Done</button></td>
+            <td class="timestamp" id="timestamp22"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start23" value="22:00"> - <input type="time" id="end23" value="23:00"></td>
+            <td><input type="text" id="task23" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(23)">Done</button></td>
+            <td class="timestamp" id="timestamp23"></td>
+        </tr>
+        <tr>
+            <td><input type="time" id="start24" value="23:00"> - <input type="time" id="end24" value="00:00"></td>
+            <td><input type="text" id="task24" placeholder="Enter task description"></td>
+            <td><button class="btn-complete" onclick="markDone(24)">Done</button></td>
+            <td class="timestamp" id="timestamp24"></td>
+        </tr>
     </tbody>
 </table>
 
